@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Phantomsans, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: cover;
+    background: linear-gradient(to top, #af40ff, #5b42f3 50%, #00ddeb);
+    color: #e4e4e4;
+}
+
+h1 {
+    margin-bottom: 80px;
+}
+
+h4 {
+    font-size: 50px;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+/* Main glassmorphism */
+
+#container {
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.384);
+    border-radius: 16px;
+    margin: 0 auto;
+    width: 750px;
+    height: 450px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    text-align: center;
+}
+
+/* Button */
+
+#OnlyButton {
+    margin: 0 auto;
+    align-items: center;
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: none;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 22px;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+#OnlyButton:active, #OnlyButton:hover {
+    outline: 0;
+}
+
+#OnlyButton span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+#OnlyButton:hover span {
+    background: none;
+}
+
+/* Responsible part */
+
+@media (min-width: 768px) {
+    #OnlyButton {
+        font-size: 24px;
+        min-width: 196px;
+    }
+
+    #text h3 {
+        margin-top: 50px;
+    }
+
+    #text {
+        background: rgba(0, 0, 0, 0.329);
+        border-radius: 16px;
+        width: 250px;
+        height: 120px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(4.9px);
+        -webkit-backdrop-filter: blur(4.9px);
+        border: 1px solid rgba(255, 255, 255, 0.23);
+        margin-left: 10%;
+        position: absolute;
+    }
+
+    #ResultPassword p {
+        margin-top: 20px;
+        width: 225px;
+        margin-left: 10px;
+    }
+
+    #ResultPassword {
+        background: rgba(0, 0, 0, 0.329);
+        border-radius: 16px;
+        width: 250px;
+        height: 120px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(4.9px);
+        -webkit-backdrop-filter: blur(4.9px);
+        border: 1px solid rgba(255, 255, 255, 0.23);
+        position: absolute;
+        margin-left: 56%;
+        word-wrap: break-word;
+    }
+}
+
+@media (max-width: 767px) {
+    #container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    #ResultPassword {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+}
+
+@media (max-height: 500px) {
+    #container {
+        height: 90%;
+    }
+}
+
+@media (max-height: 400px) {
+    #container {
+        height: 370px;
+    }
+}
